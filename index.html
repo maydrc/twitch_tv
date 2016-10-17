@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- To make it work in mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Twitchtv</title>
+  <!-- CSS Starts Here! -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Lato" type='text/css'>
+  <link rel="stylesheet" href="style.css" />
+  <!-- CSS Ends Here! -->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row main-row is-flex">
+      <div class="col-xs-12 col-md-4">
+        <div class="twitch-users">
+          <div class="search-bar">
+            <button id="featured" type="button" class="btn btn-styling hidden"><i class="fa fa-star"></i></button>
+            <button id="search" type="button" class="btn btn-styling"><i class="fa fa-search"></i></button>
+            <input id="txt_value" type="text" class="input-styling" name="search" placeholder="Search contacts..." autocomplete="off"></input>
+          </div>
+          <div class="status-bar">
+            <div id="all-tab" class="col-xs-4 tab selected" data-status="all"> <!-- data-[attribute] where "status" is the attribute -->
+              <button type="button"><i class="fa fa-users"></i></button>
+            </div>
+            <div class="col-xs-4 tab" data-status="online">
+              <button type="button"><i class="fa fa-user"></i></button>
+            </div>
+            <div class="col-xs-4 tab" data-status="offline">
+              <button type="button"><i class="fa fa-user-times"></i></button>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li class="card">
+              <div class="col-xs-3 picture">
+                <img src="images/36a1d3c.jpg" class="img-circle" height="42" width="42">
+              </div>
+              <div class="col-xs-8">
+                <div class="channel-name">Dulce M. Rodriguez</div>
+                <div class="channel-info">The Developer of this Streaming Experience</div>
+              </div>
+              <div class="col-xs-1 status"><i class="fa fa-circle"></i></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hidden-xs hidden-sm col-md-8 sticky-video">
+        <div class="twitch-video">
+          <div class="sixteen-nine">
+            <div class="content">
+              <!-- <iframe src="https://player.twitch.tv/?channel=dansgaming" frameborder="0" scrolling="no" height="100%" width="100%"></iframe> -->
+              <div class="twitch-logo">
+                <img class="img-responsive" src="Images/Twitch.png" alt="Twitch Streaming">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JS Starts Here! -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <!-- JS Ends Here! -->
+</body>
+</html>

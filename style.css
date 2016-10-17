@@ -1,0 +1,185 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  clear: both;
+  background-color: #EFF0F2;
+}
+li {
+  border-bottom: 1px solid #E3E9ED;
+  overflow: hidden;
+  clear: both;
+}
+li:last-child {
+  border: none;
+}
+/*Making Columns All the Same Height*/
+/*.main-row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}*/
+.twitch-users,
+.twitch-video {
+  background-color: #FFF;
+  border-radius: 10px;
+  margin: 15px 0;
+  height: 100%;
+}
+.sticky-video {
+  position: fixed;
+  right: 0;
+}
+/*16:9 Aspect Ratio for Video*/
+.sixteen-nine {
+  position: relative;
+}
+.sixteen-nine::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+.sixteen-nine > .content {
+  background-color: #EFF0F2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/*General Styling*/
+.twitch-video {
+  padding: 10px;
+}
+.twitch-logo {
+  padding: 10% 20%;
+}
+.twitch-logo img {
+  margin: 0 auto;
+}
+.search-bar {
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+}
+.search-bar,
+.btn-styling,
+.input-styling {
+  background-color: #E3E9ED;
+  color: #8198AC;
+}
+.input-styling {
+  border: none;
+}
+.input-styling:focus,
+.btn-styling:hover,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+  color: #8198AC;
+}
+.status-bar {
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+}
+.status-bar button {
+  background-color: Transparent;
+  border: none;
+  cursor:pointer;
+  outline:none;
+}
+.tab i {
+  color: #8198AC;
+  font-size: 2em;
+}
+.tab {
+  padding: 20px 0;
+  border-bottom: 1px solid #E3E9ED;
+}
+.tab.selected::before {
+  border-bottom: 3px solid #493992;
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.tab.selected i {
+  color: #493992;
+}
+.channel-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding-top: 18px;
+  color: #597a96;
+}
+.channel-info {
+  color: #8198AC;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+.status {
+  padding: 26px 0;
+  color: #E3E9ED;
+  font-size: 0.8em;
+  line-height: 20px;
+}
+.online {
+  color: #26c281;
+}
+.picture {
+  text-align: center;
+  padding: 15.5px 0;
+}
+.default-logo {
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background-color: #E3E9ED;
+  text-align: center;
+  padding: 6px;
+}
+.default-logo .fa-user {
+  color: #8198AC;
+  font-size: 2em;
+}
+.notResult-msg {
+  color: #597a96;
+  padding: 27px 8px;
+  text-align: center;
+}
+/*Styling the placeholder text of the input element*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #8198AC;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #8198AC;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #8198AC;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #8198AC;
+}
+
+/* Media queries Stars Here */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .notResult-msg {
+    padding: 27px;
+    font-weight: bold;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+/* Media queries Ends Here */
