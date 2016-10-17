@@ -152,6 +152,9 @@ li:last-child {
   padding: 27px 8px;
   text-align: center;
 }
+.btn.btn-styling {
+  padding: 6px;
+}
 /*Styling the placeholder text of the input element*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: #8198AC;
